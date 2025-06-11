@@ -6,13 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Examen</title>
   <style>
-    .border {
-      border: 2px solid black;
-      padding: 40px;
-      width: 80%;
-      margin: 40px;
-      box-sizing: border-box;
-    }
+   main { 
+   display: grid;
+   gap: 5px;
+   grid-template: "header  "auto;
+   justify-content: center;
+   }
+ article {
+  grid-area: header;
+  width: 600px;
+  height: auto;
+  border: solid 2px black;
+  padding: 40px;
+ }
+
   </style>
 </head>
 
@@ -21,14 +28,34 @@
     <article>
       <hr class="border">
       <H1>Your Name</H1>
-      <h3>Junior Frontend Developer<h3>
+      <h3 style=color:green>Junior Frontend Developer<h3>
         <p>123 Your Street</p>
         <p> Your City, ST 12345</p>
         <p> +595 983 773438</p>
         <p>florloep&#64;gmail.com</p>
-        <H3> Skills</H3>
+        <H3 style=color:green> Skills</H3>
         <p>HTML,CSS, JavaScripT,Accessibility, Figma to desing, Responsive Web Desing, Technical Writing, Presentation</p>
-        <h3>Education</h3>
+        <h3 style=color:green>Education</h3>
+        <p style=color:blue >School Name, Location - Degree</p>
+        <p> Month 20xx to Month 20xx</p>
+        <p>List of exciting things you did at university</p>
+        <h3 style=color:green>Experience</h3>
+        <p style=color:blue>Company Name, Location - Job Title</p>
+        <p>Month 20xx to Month 20xxi
+            <li>List of achievements</li>
+            <li>List of achievements</li>            <li> List of achievements</li>          
+          </ul>
+          <p>Skills: List of skills used or gained at this company</p>
+          <p style=color:blue>Company Name, Location - Job Title</p>
+          <p>Month 20xx to Month 20xx</p>
+          <ul>
+              <li>List of achievements</li>
+              <li>List of achievements</li>
+              <li> List of achievements</li>          
+            </ul>
+            <p>Skills: List of skills used or gained at this company</p>
+            <H3 style="color:green">Across the internet</H3>
+            <p>Add your Linkeding, GitHub profile links</p>
         <p></p>
     </article>
 
