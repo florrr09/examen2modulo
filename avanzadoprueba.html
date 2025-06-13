@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=se, initial-scale=1.0">
+  <title>Examen2</title>
+  <style>
+    .grid-container {
+      border: solid 1px black;
+      padding: 10px;
+      margin: 10px;
+      display: grid;
+      grid-template:
+        "header  header  header" 250px
+        "main  main  main" 250px
+        "footer  footer  footer" 250px
+      ;
+      font-family: Comic Sans MS;
+    }
+
+    .grid-container header {
+      grid-area: header;
+      background-color: yellow;
+      border: solid black;
+    }
+
+    .grid-container main {
+      grid-area: main;
+      border: solid black 1px;
+      display: grid;
+      grid-template:
+        "projects    workExperience  education"
+        "calculator  workExperience  education" 
+        "quiz        workExperience  education" 
+        "countdown   openWork        education" 
+        "productpage openWork        education" 
+      ;
+    }
+
+    .grid-container footer {
+      grid-area: footer;
+      background-color: green;
+      border: solid black;
+      display: grid;
+      gap: 20px;
+      grid-template:
+        "titulo  titulo  titulo" auto
+        "testimonio1  testimonio2  testimonio3" 100px
+        "derechos derechos derechos" 100px
+      ;
+    }
+
+    /* Distribucion de elementos del main*/
+    .grid-container main .projects {
+      grid-area: projects;
+      border: solid 0.5px black;
+    }
+
+    .grid-container main .calcu {
+      grid-area: calculator;
+      border: solid 0.5px black;
+    }
+
+    .grid-container main .quiz {
+      grid-area: quiz;
+      border: solid 0.5px black;
+    }
+
+    .grid-container main .cuentaRegre {
+      grid-area: countdown;
+      border: solid 0.5px black;
+    }
+
+    .grid-container main .pagprduc {
+      grid-area: productpage;
+  
+      border: solid 0.5px black;
+    }
+
+    .grid-container main .workEx {
+      grid-area: workExperience ;
+      border: solid 0.5px black;
+    }
+
+    .grid-container main .OpenWork {
+      grid-area: openWork;
+      border: solid 0.5px black;
+    }
+
+    .grid-container main .OpensourceWork {
+      grid-area: openWork;
+      border: solid 0.5px black;
+    }
+
+    .grid-container main .Education {
+      grid-area: Education;
+      border: solid 0.5px black;
+    }
+
+
+    /*fin de distribucion del main*/
+    /* Distribucion del footer*/
+
+    .grid-container footer p {
+      grid-area: titulo;
+      background-color: white;
+      text-align: center;
+    }
+
+    .grid-container footer .test1 {
+      grid-area: testimonio1;
+      background-color: white;
+      border-radius: 30px;
+      border: solid black;
+      text-align: center;
+    }
+
+    .grid-container footer .test2 {
+      grid-area: testimonio2;
+      background-color: blue;
+      border-radius: 30px;
+      border: solid black;
+      text-align: center;
+    }
+
+    .grid-container footer .test3 {
+      grid-area: testimonio3;
+      background-color: coral;
+      border-radius: 30px;
+      border: solid black;
+      text-align: center;
+    }
+
+    .grid-container footer .derechos {
+      grid-area: derechos;
+      background-color: rgb(255, 200, 200);
+      text-align: center;
+
+    }
+
+    /*fin */
+    header nav span {
+      padding: 30px;
+    }
+
+    header section h1,
+    p {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="grid-container">
+    <header>
+      <nav>
+        <span>your name</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>Home</span>
+        <span>Projects</span>
+        <span>Articles</span>
+        <span>Contact</span>
+      </nav>
+      <section>
+        <h1>Fontend Developer</h1>
+        <p>Text Example</p>
+      </section>
+    </header>
+
+    <main>
+      <section class="projects">Projects
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi quas aspernatur corrupti assumenda nam sed porro in, 
+          veritatis possimus ipsam soluta repellendus, reprehenderit, enim exercitationem facilis temporibus esse ipsum!</p>
+      </section>
+      <section class="calcu">Calculator</section>
+      <section class="quiz">Quiz app</section>
+      <section class="cuentaRegre">Countdown Time </section>
+      <section class="pagprduc">Product Upcoming page</section>
+      <section class="workEx">Work Experience
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Repellendus deserunt laboriosam fugit consequatur iste tenetur 
+          perspiciatis veritatis? Nam porro, quis molestias ipsa fuga, 
+          aspernatur accusamus sunt facilis quod deserunt ipsam.</p>
+      </section>
+      <section class="OpenWork">Opensource Work</section>
+      <section class="Education">Education</section>
+    </main>
+    <footer>
+      <p></p>
+      <section class="test1">T</section>
+      <section class="test2">t</section>
+      <section class="test3">t</section>
+      <p class="derechos">&copy; all </p>
+    </footer>
+  </section>
+  <section>
+    <h1></h1>
+  </section>
+</body>
+
+</html>
